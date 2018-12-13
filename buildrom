@@ -1,7 +1,11 @@
 #!/bin/bash
 
+mkdir /home/travis/build/shaikq/lineage
 cd /home/travis/build/shaikq/lineage
-ls
+
+/home/travis/build/shaikq/repo init -u https://github.com/shaikq/lineageOS.git -b lineage-15.1 
+/home/travis/build/shaikq/repo sync
+
 source build/envsetup.sh
 breakfast dumpling
 brunch dumpling
