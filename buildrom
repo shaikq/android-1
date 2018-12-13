@@ -1,6 +1,7 @@
 #!/bin/bash
 
 pwd
+ls
 source build/envsetup.sh
 breakfast dumpling
 brunch dumpling
