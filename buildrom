@@ -4,8 +4,8 @@ mkdir /home/travis/build/shaikq/lineage
 cd /home/travis/build/shaikq/lineage
 
 git config --global color.ui false
-/home/travis/build/shaikq/repo init -u https://github.com/shaikq/lineageOS.git -b lineage-15.1
-/home/travis/build/shaikq/repo sync
+/home/travis/build/shaikq/repo init -q -u https://github.com/shaikq/lineageOS.git -b lineage-15.1
+/home/travis/build/shaikq/repo sync -q
 
 source build/envsetup.sh
 breakfast dumpling
