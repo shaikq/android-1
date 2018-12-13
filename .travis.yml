@@ -3,8 +3,6 @@ language: bash
 before_script:
     - curl https://storage.googleapis.com/git-repo-downloads/repo > /home/travis/build/shaikq/repo
     - chmod a+x /home/travis/build/shaikq/repo
-    - /home/travis/build/shaikq/repo init -u https://github.com/shaikq/lineageOS.git -b lineage-15.1 /home/travis/build/shaikq/lineage
-    - /home/travis/build/shaikq/repo sync
     
 script:
     - bash buildrom
